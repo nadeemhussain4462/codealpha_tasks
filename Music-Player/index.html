@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="now-playing">
+            <img id="cover" src="image/" alt="Album Cover">
+            <div class="track-info">
+                <h2 id="title">What's next</h2>
+                <p id="artist">Aitch</p>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time">
+                <span id="current-time">1:28</span>
+                <span id="duration">1:32</span>
+            </div>
+            <div class="control-buttons">
+                <button id="prev" class="btn">⏮️</button>
+                <button id="play" class="btn">▶️</button>
+                <button id="next" class="btn">⏭️</button>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="music/"></audio>
+    <script src="app.js"></script>
+</body>
+</html>
