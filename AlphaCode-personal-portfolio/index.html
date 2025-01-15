@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="profile">
+          <img src="images/profile-pic.png" alt="Profile Picture" />
+          <h1>Nadeem Hussain</h1>
+          <p>Front-End Developer | Web Enthusiast</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm a passionate web developer with a strong foundation in
+          HTML, CSS, and JavaScript. I love building user-friendly websites and
+          creating innovative solutions to real-world problems.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-set">
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar html"></div>
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar css"></div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar js"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Image Gallery</p>
+            <br />
+            <a
+              href="https://image-gallery-gray-six.vercel.app/"
+              target="_blank"
+              class="btn"
+              >View</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Calculator</p>
+            <br />
+            <br />
+            <a
+              href="https://calculator-eta-liart-48.vercel.app/"
+              target="_blank"
+              class="btn"
+              >View</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Portfolio</p>
+            <br /><br />
+            <a href="#" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/nadeemhussain4462" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/nadeem-hussain-96080820b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Nadeem Hussain. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. I'll get back to you soon.</p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
